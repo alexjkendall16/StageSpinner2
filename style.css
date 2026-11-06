@@ -1,0 +1,151 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0b0709;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT MODE THEMATIC STYLING OVERRIDES */
+body.light-mode {
+    background-color: #f8f4ee;
+    color: #1c1917;
+}
+
+body.light-mode header {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: #e7d5b3;
+}
+
+body.light-mode .stage-section {
+    background-color: #f2e9dc;
+}
+
+body.light-mode .panel-section {
+    background-color: #ffffff;
+    border-left-color: #e7d5b3;
+}
+
+body.light-mode .panel-header, body.light-mode .panel-footer {
+    background-color: #fcf9f2;
+    border-color: #e7d5b3;
+}
+
+body.light-mode .segment-row {
+    background-color: #f9f6f0;
+    border-color: #e5d5be;
+}
+
+body.light-mode .segment-input {
+    background-color: #ffffff;
+    border-color: #d6c4a8;
+    color: #1c1917;
+}
+
+body.light-mode .stage-floor {
+    background: radial-gradient(ellipse at center, #d8bc98 0%, #a88b68 70%, #785d3f 100%);
+    border-top-color: #b8860b;
+}
+
+body.light-mode .spotlight {
+    background: radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.25) 0%, rgba(212, 175, 55, 0.05) 50%, transparent 70%);
+}
+
+body.light-mode .status-banner {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: #d4af37;
+    color: #443410;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+/* Deep Red Velvet Curtain Gradients */
+.curtain-left {
+    background: linear-gradient(90deg, 
+        #1a0305 0%, 
+        #4a060a 25%, 
+        #2a0407 50%, 
+        #6b0910 75%, 
+        #200305 100%);
+    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.8), inset -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.curtain-right {
+    background: linear-gradient(270deg, 
+        #1a0305 0%, 
+        #4a060a 25%, 
+        #2a0407 50%, 
+        #6b0910 75%, 
+        #200305 100%);
+    box-shadow: -10px 0 25px rgba(0, 0, 0, 0.8), inset 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.curtain-top {
+    background: linear-gradient(180deg, 
+        #4a060a 0%, 
+        #7f0d16 40%, 
+        #360407 70%, 
+        #1e0204 100%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Gold Foil Accents */
+.gold-border {
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.gold-gradient-text {
+    background: linear-gradient(135deg, #fff2a3 0%, #d4af37 50%, #aa7c11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gold-button {
+    background: linear-gradient(135deg, #fce055 0%, #d4af37 50%, #b08210 100%);
+    color: #1a0305;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+.gold-button:hover:not(:disabled) {
+    background: linear-gradient(135deg, #fff176 0%, #e5be38 50%, #c49416 100%);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.gold-button:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Stage Floor Shadow & Spotlight */
+.stage-floor {
+    background: radial-gradient(ellipse at center, #2e1d14 0%, #160c08 70%, #0a0503 100%);
+    border-top: 3px solid #d4af37;
+    box-shadow: inset 0 10px 30px rgba(0,0,0,0.9);
+}
+
+.spotlight {
+    background: radial-gradient(circle at 50% 40%, rgba(255, 240, 200, 0.15) 0%, rgba(255, 240, 200, 0.03) 50%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Custom Scrollbar for Panel */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #181114;
+}
+::-webkit-scrollbar-thumb {
+    background: #4a060a;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}
